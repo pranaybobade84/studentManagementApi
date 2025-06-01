@@ -32,8 +32,13 @@ JWT_EXPIRATION=1h
 ```bash
 npm start
 ```
-🔐 Authentication Routes
-Method Endpoint Description
+🔐 Authentication Usage Guide
+
+Your API uses JWT-based authentication. After logging in, the server returns a JWT token which:
+
+Is automatically stored in a cookie
+
+Can also be sent manually via the Authorization header.
 ```bash
 POST	    /api/auth/register	            Register user (admin/student)
 POST	    /api/auth/login	                 Login and receive token
